@@ -1,0 +1,13 @@
+root = true
+
+[*]
+indent_style = tab  # Usa "tab" si prefieres tabs en lugar de espacios
+indent_size = 4  # Cambia a 4 si prefieres 4 espacios
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.ts]
+indent_style = tab
+indent_size = 4
