@@ -1,67 +1,67 @@
 # 📌 TypeScript Notes
 
-Este repositorio contiene mis apuntes y prácticas mientras aprendo TypeScript. Aquí guardo comandos esenciales y configuraciones útiles para recordar rápidamente cómo trabajar con TS. 🚀
+This repository contains my notes and practices while learning TypeScript. Here, I store essential commands and useful configurations to quickly recall how to work with TS. 🚀
 
 ---
 
-## 📂 Configuración inicial de TypeScript
+## 📂 Initial TypeScript Setup
 
-### 1️⃣ Instalar TypeScript de forma global
+### 1️⃣ Install TypeScript globally
 
 ```sh
 npm install -g typescript
 ```
 
-### 2️⃣ Verificar la versión de TypeScript instalada
+### 2️⃣ Check the installed TypeScript version
 
 ```sh
 tsc -v
 ```
 
-### 3️⃣ Crear un archivo de configuración `tsconfig.json`
+### 3️⃣ Create a `tsconfig.json` configuration file
 
 ```sh
 tsc --init
 ```
 
-Este comando generará un archivo `tsconfig.json` con la configuración básica para el proyecto.
+This command generates a `tsconfig.json` file with the basic configuration for your project.
 
 ---
 
-## 📝 Comandos útiles de TypeScript
+## 📝 Useful TypeScript Commands
 
-### ✅ Compilar un archivo TypeScript a JavaScript
+### ✅ Compile a TypeScript file to JavaScript
 
 ```sh
-tsc archivo.ts
+tsc file.ts
 ```
 
-Esto generará un archivo `archivo.js` en la misma carpeta.
+This generates a `file.js` in the same folder.
 
-### ✅ Compilar y observar cambios automáticamente
+### ✅ Compile and watch for changes automatically
 
 ```sh
 tsc --watch
 ```
 
-Cada vez que guardes un cambio en un archivo `.ts`, TypeScript recompilará automáticamente.
+Whenever you save a change in a `.ts` file, TypeScript will recompile automatically.
 
-### ✅ Ejecutar TypeScript sin compilar (usando `ts-node`)
+### ✅ Run TypeScript without compiling (using `ts-node`)
 
 ```sh
-npx ts-node archivo.ts
+npx ts-node file.ts
 ```
 
-⚠️ **Nota:** Para usar este comando, primero instala `ts-node` con:
+⚠️ **Note:** To use this command, install `ts-node` first:
 
 ```sh
 npm install -g ts-node
 ```
 
-### ✅ Configurar `ts-node` en VS Code para ejecutar con Run Code
-Si usas la extensión **Code Runner** en VS Code y quieres ejecutar TypeScript directamente, sigue estos pasos:
-1. Abre las configuraciones de usuario (`Ctrl + Shift + P` → "Preferences: Open Settings (JSON)").
-2. Agrega lo siguiente:
+### ✅ Configure `ts-node` in VS Code to run with Run Code
+If you're using the **Code Runner** extension in VS Code and want to execute TypeScript directly, follow these steps:
+1. Open user settings (`Ctrl + Shift + P` → "Preferences: Open Settings (JSON)").
+2. Add the following:
 
 ```json
 "code-runner.executorMap": {
@@ -69,21 +69,21 @@ Si usas la extensión **Code Runner** en VS Code y quieres ejecutar TypeScript d
 }
 ```
 
-3. Guarda los cambios y ahora puedes ejecutar archivos `.ts` directamente con **Run Code**.
+3. Save the changes, and now you can run `.ts` files directly using **Run Code**.
 
 ---
 
-## ⚙️ Opciones clave en `tsconfig.json`
+## ⚙️ Key `tsconfig.json` Options
 
-Algunas opciones útiles que puedes configurar en `tsconfig.json`:
+Some useful options you can configure in `tsconfig.json`:
 
-- "target": Versión de ECMAScript a la que se compilará (`es5`, `es6`, `esnext`...)
-- "module": Sistema de módulos a utilizar (`commonjs`, `es6`...)
-- "strict": Habilita el modo estricto para mejores prácticas
-- "outDir": Carpeta de salida para los archivos compilados
-- "rootDir": Carpeta donde están los archivos TypeScript
+- "target": ECMAScript version to compile to (`es5`, `es6`, `esnext`...)
+- "module": Module system to use (`commonjs`, `es6`...)
+- "strict": Enables strict mode for better practices
+- "outDir": Output folder for compiled files
+- "rootDir": Folder where TypeScript files are located
 
-Ejemplo:
+Example:
 
 ```json
 {
@@ -99,18 +99,18 @@ Ejemplo:
 
 ---
 
-## 📦 Configuración de TypeScript con Node.js
+## 📦 TypeScript with Node.js Setup
 
-### 1️⃣ Iniciar un proyecto con TypeScript
+### 1️⃣ Initialize a project with TypeScript
 
 ```sh
-mkdir mi-proyecto
-cd mi-proyecto
+mkdir my-project
+cd my-project
 npm init -y
 npm install typescript ts-node @types/node --save-dev
 ```
 
-### 2️⃣ Agregar un script en `package.json`
+### 2️⃣ Add a script in `package.json`
 
 ```json
 "scripts": {
@@ -118,7 +118,7 @@ npm install typescript ts-node @types/node --save-dev
 }
 ```
 
-Ahora puedes ejecutar tu código con:
+Now, you can run your code with:
 
 ```sh
 npm run start
@@ -126,147 +126,11 @@ npm run start
 
 ---
 
-## 🚀 Recursos útiles
+## 🚀 Useful Resources
 
-- [Documentación oficial de TypeScript](https://www.typescriptlang.org/)
-- [TypeScript en GitHub](https://github.com/microsoft/TypeScript)
+- [Official TypeScript Documentation](https://www.typescriptlang.org/)
+- [TypeScript on GitHub](https://github.com/microsoft/TypeScript)
 - [TSConfig Reference](https://www.typescriptlang.org/tsconfig)
 
-¡Feliz coding! 🎯
-
-# 📌 TypeScript Notes
-
-Este repositorio contiene mis apuntes y prácticas mientras aprendo TypeScript. Aquí guardo comandos esenciales y configuraciones útiles para recordar rápidamente cómo trabajar con TS. 🚀
-
----
-
-## 📂 Configuración inicial de TypeScript
-
-### 1️⃣ Instalar TypeScript de forma global
-
-```sh
-npm install -g typescript
-```
-
-### 2️⃣ Verificar la versión de TypeScript instalada
-
-```sh
-tsc -v
-```
-
-### 3️⃣ Crear un archivo de configuración `tsconfig.json`
-
-```sh
-tsc --init
-```
-
-Este comando generará un archivo `tsconfig.json` con la configuración básica para el proyecto.
-
----
-
-## 📝 Comandos útiles de TypeScript
-
-### ✅ Compilar un archivo TypeScript a JavaScript
-
-```sh
-tsc archivo.ts
-```
-
-Esto generará un archivo `archivo.js` en la misma carpeta.
-
-### ✅ Compilar y observar cambios automáticamente
-
-```sh
-tsc --watch
-```
-
-Cada vez que guardes un cambio en un archivo `.ts`, TypeScript recompilará automáticamente.
-
-### ✅ Ejecutar TypeScript sin compilar (usando `ts-node`)
-
-```sh
-npx ts-node archivo.ts
-```
-
-⚠️ **Nota:** Para usar este comando, primero instala `ts-node` con:
-
-```sh
-npm install -g ts-node
-```
-
-### ✅ Configurar `ts-node` en VS Code para ejecutar con Run Code
-Si usas la extensión **Code Runner** en VS Code y quieres ejecutar TypeScript directamente, sigue estos pasos:
-1. Abre las configuraciones de usuario (`Ctrl + Shift + P` → "Preferences: Open Settings (JSON)").
-2. Agrega lo siguiente:
-
-```json
-"code-runner.executorMap": {
-  "typescript": "ts-node"
-}
-```
-
-3. Guarda los cambios y ahora puedes ejecutar archivos `.ts` directamente con **Run Code**.
-
----
-
-## ⚙️ Opciones clave en `tsconfig.json`
-
-Algunas opciones útiles que puedes configurar en `tsconfig.json`:
-
-- "target": Versión de ECMAScript a la que se compilará (`es5`, `es6`, `esnext`...)
-- "module": Sistema de módulos a utilizar (`commonjs`, `es6`...)
-- "strict": Habilita el modo estricto para mejores prácticas
-- "outDir": Carpeta de salida para los archivos compilados
-- "rootDir": Carpeta donde están los archivos TypeScript
-
-Ejemplo:
-
-```json
-{
-  "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "strict": true,
-    "outDir": "./dist",
-    "rootDir": "./src"
-  }
-}
-```
-
----
-
-## 📦 Configuración de TypeScript con Node.js
-
-### 1️⃣ Iniciar un proyecto con TypeScript
-
-```sh
-mkdir mi-proyecto
-cd mi-proyecto
-npm init -y
-npm install typescript ts-node @types/node --save-dev
-```
-
-### 2️⃣ Agregar un script en `package.json`
-
-```json
-"scripts": {
-  "start": "ts-node src/index.ts"
-}
-```
-
-Ahora puedes ejecutar tu código con:
-
-```sh
-npm run start
-```
-
----
-
-## 🚀 Recursos útiles
-
-- [Documentación oficial de TypeScript](https://www.typescriptlang.org/)
-- [TypeScript en GitHub](https://github.com/microsoft/TypeScript)
-- [TSConfig Reference](https://www.typescriptlang.org/tsconfig)
-
-¡Happy coding! 🎯
+Happy coding! 🎯
 
