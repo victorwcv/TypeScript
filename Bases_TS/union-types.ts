@@ -18,5 +18,5 @@
 		powers: [22],
 	};
 
-	console.log( typeof myCustomVariable);
+	console.log(typeof myCustomVariable);
 })();
