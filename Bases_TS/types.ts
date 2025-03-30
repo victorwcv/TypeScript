@@ -18,7 +18,7 @@ let arrayDeNumeros: Array<number> = [1, 2, 3];
 let arrayDeNumeros2: number[] = [1, 2, 3];
 
 // Objetos
-let persona: { nombre: string; edad: number; adulto?: boolean } = {
+let persona4: { nombre: string; edad: number; adulto?: boolean } = {
   nombre: "Victor",
   edad: 27,
 };
@@ -191,9 +191,9 @@ properties.push(2021);
 // Tuplas
 // Es un array de una longitud predefinida.
 
-// Ejemplo 
+// Ejemplo
 
-/* 
+/*
 [
   ['X', 'O', 'X'],
   ['O', 'X', 'O'],
